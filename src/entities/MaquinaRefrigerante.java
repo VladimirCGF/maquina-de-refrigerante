@@ -32,7 +32,7 @@ public class MaquinaRefrigerante {
     private static void imprimirExtrato(Venda venda){
         System.out.println("VENDA REALIZADA COM SUCESSO");
         System.out.println("PRODUTO: " + venda.getProduto());
-        System.out.printf("VALOR DA VENDA: R$ %.2f",venda.getValorVenda());
+        System.out.printf("VALOR DA VENDA: R$ %.2f\n",venda.getValorVenda());
         System.out.printf("VALOR INSERIDO: R$ %.2f\n", venda.getValorInserido());
         System.out.printf("VALOR TROCO: R$ %.2f\n", venda.getValorTroco());
         System.out.println("DATA E HORA: " + venda.getDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
